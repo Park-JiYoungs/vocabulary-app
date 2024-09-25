@@ -73,6 +73,20 @@
       "eng": "monkey",
       "kor": "원숭이",
       "isDone": false
+    },
+    {
+      "id": "7e7b",
+      "day": "1",
+      "eng": "puppy",
+      "kor": "강아지",
+      "isDone": false
+    },
+    {
+      "id": "0f85",
+      "day": "1",
+      "eng": "house",
+      "kor": "집",
+      "isDone": false
     }
   ]
 }

@@ -1,4 +1,5 @@
 import {useState} from "react";
+import {Link} from "react-router-dom";
 
 export default function Word({word: w}) {
     const [word, setWord] = useState(w);
@@ -52,6 +53,7 @@ export default function Word({word: w}) {
             <td>{isShow && word.kor}</td>
             <td>
                 <button onClick={toggleShow}>뜻 {isShow? "숨기기" : "보기"}</button>
+                <Link to={`/update_word/${word.id}`}>수정</Link>
                 <button onClick={del} className="btn_del">삭제</button>
             </td>
         </tr>

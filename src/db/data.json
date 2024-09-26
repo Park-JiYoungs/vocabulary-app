@@ -31,7 +31,7 @@
     },
     {
       "id": "3",
-      "day": 2,
+      "day": "5",
       "eng": "car",
       "kor": "자동차",
       "isDone": false
@@ -65,11 +65,11 @@
       "isDone": false
     },
     {
-      "id": "fdad",
       "day": "2",
       "eng": "mouse",
       "kor": "쥐",
-      "isDone": false
+      "isDone": false,
+      "id": "fdad"
     },
     {
       "id": "b845",

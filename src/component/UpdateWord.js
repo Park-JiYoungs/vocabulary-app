@@ -9,6 +9,10 @@ export default function UpdateWord() {
     const Params = useFetch(`http://localhost:3001/words/${useParams().id}`);
     const [isLoading, setIsLoading] = useState(false);
 
+    const engRef = useRef(Params.eng);
+    const korRef = useRef(Params.kor);
+    const dayRef = useRef(Params.day);
+
     useEffect(() => {
         if (Params) {
             dayRef.current.value = Params.day;
@@ -45,10 +49,6 @@ export default function UpdateWord() {
             })
         }
     }
-
-    const engRef = useRef(Params.eng);
-    const korRef = useRef(Params.kor);
-    const dayRef = useRef(Params.day);
 
     return (
         <form onSubmit={onSubmit}>
